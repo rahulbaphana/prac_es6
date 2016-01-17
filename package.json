@@ -1,0 +1,37 @@
+{
+  "name": "prac_es6",
+  "version": "1.0.0",
+  "description": "trying out some cool stuff",
+  "scripts": {
+    "start": "karma start karma.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rahulbaphana/prac_es6.git"
+  },
+  "keywords": [
+    "es6",
+    "es2015",
+    "es6",
+    "examples"
+  ],
+  "author": "Rahul Baphana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahulbaphana/prac_es6/issues"
+  },
+  "homepage": "https://github.com/rahulbaphana/prac_es6#readme",
+  "devDependencies": {
+    "babelify": "~5.0.3",
+    "browserify": "^9.0.3",
+    "gulp": "~3.8.11",
+    "karma": "~0.12.31",
+    "karma-browserify": "~3.0.2",
+    "karma-jasmine": "~0.3.5",
+    "karma-phantomjs-launcher": "~0.1.4"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.3.14",
+    "karma": "^0.13.19"
+  }
+}
