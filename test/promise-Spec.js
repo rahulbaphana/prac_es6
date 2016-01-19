@@ -1,3 +1,9 @@
+import {getOrder, getCompany, getUser} from "../src/code.js";
+
+var chai = require("chai");
+var chaiAsPromised = require("chai-as-promised");
+chai.use(chaiAsPromised);
+
 describe("Promise", () => {
     it("should execute the callback given to then", (done) => {
         var promise = new Promise((resolve, reject) => {
@@ -26,7 +32,6 @@ describe("Promise", () => {
         });
 
         promise.then(() => {
-            //on success
             fail("Shouldn't be successful!!");
             done();
         }, (error) => {
@@ -36,9 +41,7 @@ describe("Promise", () => {
     });
 
     it("should compose when resolved with a promise", (done) => {
-        var previousPromise = new Promise((resolve, reject) => {
-            resolve(3);
-        });
+        var previousPromise = Promise.resolve(3);
 
         var promise = new Promise((resolve, reject) => {
             resolve(previousPromise);
